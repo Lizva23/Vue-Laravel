@@ -34,13 +34,13 @@
                     <input type="text" name="description" value="{{ $todo->description }}" class="form-control" placeholder="Description">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-3">
                 <div class="form-group">
-                    <strong>Detail:</strong>
-                    <textarea class="form-control" style="height:150px" name="date" placeholder="Date">{{ $todo->date }}</textarea>
+                    <strong>Detail: {{ $todo->date }}</strong>
+                    <input type="date" name="date" class="form-control" placeholder="Date">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-3">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </div>
